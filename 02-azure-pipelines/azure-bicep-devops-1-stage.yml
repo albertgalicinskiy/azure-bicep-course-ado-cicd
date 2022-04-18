@@ -17,7 +17,7 @@ steps:
 - task: AzureCLI@2
   displayName: Preview Bicep Changes
   inputs:
-    azureSubscription: 'Visual Studio Professional Subscription(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
+    azureSubscription: 'Visual Studio Professional Subscription(1)(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
@@ -30,7 +30,7 @@ steps:
 - task: AzureCLI@2
   displayName: Deploy Bicep To Azure
   inputs:
-    azureSubscription: 'Visual Studio Professional Subscription(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
+    azureSubscription: 'Visual Studio Professional Subscription(1)(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
