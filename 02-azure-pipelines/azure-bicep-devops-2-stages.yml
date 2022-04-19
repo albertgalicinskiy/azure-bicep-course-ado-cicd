@@ -41,7 +41,7 @@ stages:
     - task: AzureCLI@2
       displayName: Preview Bicep Changes
       inputs:
-        azureSubscription: 'Microsoft-Azure-0(17b12858-3960-4e6f-a663-a06fdae23428)'
+        azureSubscription: 'Visual Studio Professional Subscription(1)(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
@@ -62,7 +62,7 @@ stages:
     - task: ManualValidation@0
       timeoutInMinutes: 1440 # task times out in 1 day
       inputs:
-        notifyUsers: 'houssem.dellai@live.com'
+        # notifyUsers: 'galicinskiyalba@mail.ru'
         instructions: 'Please validate the build $(Build.BuildId) configuration and resume'
         onTimeout: 'resume'
 
@@ -76,7 +76,7 @@ stages:
     - task: AzureCLI@2
       displayName: Deploy Bicep To Azure
       inputs:
-        azureSubscription: 'Microsoft-Azure-0(17b12858-3960-4e6f-a663-a06fdae23428)'
+        azureSubscription: 'Visual Studio Professional Subscription(1)(57403a3c-0cbd-4b93-b8ce-b8ebe863efb0)'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
